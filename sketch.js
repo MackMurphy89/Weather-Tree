@@ -62,9 +62,6 @@ function setup() {
 }
 
 function draw() {
-  
-  //print(RlRhLlLh.length);
-  
   //COLOR ARRAY SET UP
   
   if (fColor>0) {
@@ -81,15 +78,16 @@ function draw() {
   float(trunkC=[random(255), random(255), random(255)]);
   }
   
-  scale(width/600, height/400);
-  
   background(backC[0], backC[1], backC[2]);
   
   strokeWeight(0);
   textStyle(BOLD);
-  text("City: New York", 30, height*0.85);
-  text("Current temperature: " + temperature + "°F", 30, height*0.85 - 20);
-  text("Forecast: " + weather, 30, height*0.85 - 40);
+  textSize(12 *((width+height)/1000));
+  text("City: New York", 30, height*0.85 + ((width+height)/1000));
+  text("Current temperature: " + temperature + "°F", 30, height*0.85 - (20*((width+height)/1000)));
+  text("Forecast: " + weather, 30, height*0.85 - (40*((width+height)/1000)));
+  
+  scale(width/600, height/400);
   
 //spawn rate for rain/snow
     let t = frameCount / 60;
