@@ -87,9 +87,9 @@ function draw() {
   
   strokeWeight(0);
   textStyle(BOLD);
-  text("City: New York", windowWidth/20, windowHeight*0.85);
-  text("Current temperature: " + temperature + "°F", windowWidth/20, windowHeight*0.85 - 20);
-  text("Forecast: " + weather, windowWidth/20, windowHeight*0.85 - 40);
+  text("City: New York", width/20, height*0.85);
+  text("Current temperature: " + temperature + "°F", width/20, height*0.85 - 20);
+  text("Forecast: " + weather, width/20, height*0.85 - 40);
   
 //spawn rate for rain/snow
     let t = frameCount / 60;
